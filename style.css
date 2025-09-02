@@ -27,7 +27,7 @@ header .logo img {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px; /* afstand tussen links op desktop */
   margin: 0;
   padding: 0;
 }
@@ -51,11 +51,14 @@ nav ul li a:focus {
     padding: 15px 5%;
   }
 
+  /* Mobiele nav: 2 links per rij */
   nav ul {
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px; /* verticale en horizontale afstand */
     width: 100%;
     text-align: center;
+    padding: 0;
   }
 
   nav ul li a {
@@ -101,8 +104,11 @@ section.yellow {
   min-width: 0;
 }
 
+/* Algemene styling voor afbeeldingen in secties */
 .taal-img,
-.rooster-img {
+.rooster-img,
+.blokken-img,
+.over-ons-img {
   max-width: 600px;
   height: auto;
   border-radius: 6px;
@@ -116,7 +122,9 @@ section.yellow {
   }
 
   .taal-img,
-  .rooster-img {
+  .rooster-img,
+  .blokken-img,
+  .over-ons-img {
     max-width: 100%;
     display: block;
     margin: 0 auto;

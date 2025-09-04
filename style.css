@@ -27,7 +27,7 @@ header .logo img {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 40px; /* afstand tussen links op desktop */
+  gap: 40px; 
   margin: 0;
   padding: 0;
 }
@@ -51,11 +51,10 @@ nav ul li a:focus {
     padding: 15px 5%;
   }
 
-  /* Mobiele nav: 2 links per rij */
   nav ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px; /* verticale en horizontale afstand */
+    gap: 10px 20px; 
     width: 100%;
     text-align: center;
     padding: 0;
@@ -104,7 +103,6 @@ section.yellow {
   min-width: 0;
 }
 
-/* Algemene styling voor afbeeldingen in secties */
 .taal-img,
 .rooster-img,
 .blokken-img,
